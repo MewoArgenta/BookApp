@@ -118,7 +118,7 @@ class BooksApp extends React.Component {
             <Link
             to='/search'
             >
-            <a>Add a book</a>
+            Add a book
             </Link>
           </div>
            </div>

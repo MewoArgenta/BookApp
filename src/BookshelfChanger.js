@@ -14,9 +14,9 @@ class BookshelfChanger extends React.Component {
       <div className="book-shelf-changer">
         <select onChange={event => this.handleAnswer(book,event)}>
           <option value="move" disabled={true}>Move to...</option>
-          <option value="currentlyReading" selected={shelfTitle==='Currently Reading'} disabled={shelfTitle==='Currently Reading'}>Currently Reading</option>
-          <option value="wantToRead"  selected={shelfTitle==='Want to Read'} disabled={shelfTitle==='Want to Read'}>Want to Read</option>
-          <option value="read" selected={shelfTitle==='Read'} disabled={shelfTitle==='Read'}>Read</option>
+          <option value="currentlyReading" defaultValue={shelfTitle==='Currently Reading'} disabled={shelfTitle==='Currently Reading'}>Currently Reading</option>
+          <option value="wantToRead"  defaultValue={shelfTitle==='Want to Read'} disabled={shelfTitle==='Want to Read'}>Want to Read</option>
+          <option value="read" defaultValue={shelfTitle==='Read'} disabled={shelfTitle==='Read'}>Read</option>
           <option value="none">None</option>
         </select>
       </div>
