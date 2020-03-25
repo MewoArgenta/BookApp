@@ -36,6 +36,7 @@ class Shelf extends React.Component {
                     <Book
                       handleAddShelf={handleAddShelf}
                       book={book}
+                      shelfTitle={title}
                     />
                   </li>
                 )

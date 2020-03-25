@@ -7,7 +7,7 @@ import BookshelfChanger from './BookshelfChanger'
 class Book extends React.Component {
 
   render(){
-    const { book, handleAddShelf } = this.props;
+    const { book, handleAddShelf, shelfTitle } = this.props;
     const backgroundImage = book.backgroundImage;
     return(
       <div className="book">
@@ -17,6 +17,7 @@ class Book extends React.Component {
           <BookshelfChanger
             book={book}
             handleAddShelf={handleAddShelf}
+            shelfTitle={shelfTitle}
           />
         </div>
         <div className="book-title">{book.title}</div>
