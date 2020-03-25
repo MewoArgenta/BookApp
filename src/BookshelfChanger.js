@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import './App.css'
 
 class BookshelfChanger extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   handleAnswer = (book, event) => {
     this.props.handleAddShelf(book,event.target.value);
   };
