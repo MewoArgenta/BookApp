@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-// import * as BooksAPI from './BooksAPI'
 import './App.css'
 import Book from './Book'
 
@@ -16,11 +15,6 @@ class Shelf extends React.Component {
      */
     showSearchPage: false
   };
-
-
-
-
-
 
   render() {
     const { title, books, handleAddShelf } = this.props;
@@ -48,5 +42,12 @@ class Shelf extends React.Component {
     )
   }
 }
+
+Shelf.propTypes = {
+  book: PropTypes.object,
+  handleAddShelf: PropTypes.func,
+  shelfTitle: PropTypes.string
+};
+
 
 export default Shelf
